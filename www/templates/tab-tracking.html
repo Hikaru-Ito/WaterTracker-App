@@ -1,0 +1,22 @@
+<ion-view>
+  <ion-header-bar class="bar-light">
+    <h1 class="title">Tracking</h1>
+  </ion-header-bar>
+  <ion-content scroll="false">
+    <div id="tracking_view">
+
+    	<div class="graph">
+    		<canvas barchart options="options" data="chart"height="230" width="widthInnnter"></canvas>
+    	</div>
+    	<ion-scroll class="datalists">
+    		<div class="datalist" ng-repeat="d in datas">
+    			<div class="water_gage">
+    				<div class="gade" ng-style="{ width:d.value/10 +'%' }"></div>
+    			</div>
+    			<div class="text">{{d.value * 5}}ml 飲みました</div>
+    			<div class="date">{{d.created}}</div>
+    		</div>
+ 		</ion-scroll>
+    </div>
+  </ion-content>
+</ion-view>

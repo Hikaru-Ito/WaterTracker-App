@@ -1,0 +1,33 @@
+<ion-view>
+  <ion-header-bar class="bar-light">
+    <h1 class="title" ng-click="hogehoge()">Bluetooth</h1>
+    <div class="buttons">
+      <button class="button" ng-click="goSettingPage()">調整</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+  	<div id="setting_view">
+
+      <div class="init_view">
+  		<div class="message" ng-show="!isConnected" ng-hide="isBottleScaned">ボトルとペアリングされていません</div>
+  		<div class="message" ng-show="isConnected">1つのボトルとペアリングされています</div>
+  		<div class="message" ng-show="isBottleScaned">ペアリングするボトルを選択してください</div>
+		<button class="button button-outline button-positive" ng-show="!isConnected" ng-click="startScan()">
+		  <span ng-hide="isScanning">ボトルをスキャンする</span>
+		  <span ng-show="isScanning">スキャン中・・・</span>
+		</button>
+		<div class="loading" ng-show="isScanning">
+		<ion-spinner icon="ripple" class="spinner-positive"></ion-spinner>
+		</div>
+		<div class="list bottles">
+
+		    <a class="item" href="#" ng-repeat="device in devices" ng-click="connectDevice(device.id)">
+		      <h2>{{device.name}}</h2>
+		      <p>{{device.id}}</p>
+		    </a>
+
+		</div>
+      </div>
+  	</div>
+  </ion-content>
+</ion-view>

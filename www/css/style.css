@@ -1,0 +1,89 @@
+#bottle_view {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  #bottle_view .water_bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 43%;
+    background: #4fc0e8;
+    content: '';
+    z-index: 2; }
+  #bottle_view .parcent {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    font-weight: bold;
+    height: 100px;
+    text-align: center;
+    font-size: 80px;
+    color: #444;
+    z-index: 3; }
+
+#tracking_view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #34495e; }
+  #tracking_view .graph {
+    width: 100%;
+    height: 250px;
+    padding: 8px; }
+  #tracking_view .datalists {
+    position: relative;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    height: calc(100% - 250px);
+    padding: 8px; }
+    #tracking_view .datalists .datalist {
+      position: relative;
+      height: 56px;
+      line-height: 56px;
+      border-bottom: 1px solid #eee;
+      padding-left: 114px; }
+      #tracking_view .datalists .datalist .water_gage {
+        position: absolute;
+        width: 100px;
+        background: #eee;
+        height: 28px;
+        left: 0;
+        bottom: 12px; }
+        #tracking_view .datalists .datalist .water_gage .gade {
+          content: '';
+          background: #4fc0e8;
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 28px;
+          width: 33%;
+          z-index: 2; }
+      #tracking_view .datalists .datalist .text {
+        font-weight: bold;
+        color: #444; }
+      #tracking_view .datalists .datalist .date {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 56px;
+        line-height: 56px;
+        width: 100%;
+        text-align: right;
+        font-weight: bold;
+        color: #aaa;
+        font-size: 12px; }
+
+#setting_view {
+  text-align: center; }
+  #setting_view .init_view {
+    margin-top: 100px; }
+    #setting_view .init_view .message {
+      font-weight: bold;
+      color: #666;
+      font-size: 16px;
+      margin: 40px; }
