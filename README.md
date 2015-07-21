@@ -1,5 +1,5 @@
 # WaterTracker BLE Central iOS/Android App
-![LOGO](https://gyazo.com/f852e2c1d612c8d6c5ff6322ca5da376.png)
+![LOGO](http://gyazo.com/80476e41f630e4ddc7cb4879935eff64.png)
 
 WaterTracker is a BLE peripheral device and BLE central iOS/Android app to track the remaining amount of PET bottles.
 
@@ -7,7 +7,7 @@ WaterTracker is a BLE peripheral device and BLE central iOS/Android app to track
 [https://github.com/Hikaru-Ito/WaterTracker-BlendMicro](https://github.com/Hikaru-Ito/WaterTracker-BlendMicro)
 
 ### Screens
-![Screen](https://gyazo.com/8e12901c993f4d42b13938151a2f13fa.ong)
+![Screen](https://gyazo.com/8e12901c993f4d42b13938151a2f13fa.png)
 
 ### Tech
 
